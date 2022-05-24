@@ -1,4 +1,4 @@
-package com.yarnon.principle.Liskov;
+package com.yaron.principle.Liskov;
 
 public class Liskov {
 }

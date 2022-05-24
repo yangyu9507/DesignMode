@@ -1,4 +1,4 @@
-package com.yarnon.principle.OpenClose;
+package com.yaron.principle.OpenClose;
 
 public class Ocp {
 

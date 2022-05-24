@@ -1,4 +1,4 @@
-package com.yarnon.principle.SingleResponsibility;
+package com.yaron.principle.SingleResponsibility;
 
 public class SingleResponsibility1 {
 

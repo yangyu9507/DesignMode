@@ -1,4 +1,4 @@
-package com.yarnon.principle.dependencdInversion.improve;
+package com.yaron.principle.dependencdInversion.improve;
 
 public class DependecyInversion {
 

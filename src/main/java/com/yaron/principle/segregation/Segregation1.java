@@ -1,4 +1,4 @@
-package com.yarnon.principle.segregation;
+package com.yaron.principle.segregation;
 
 public class Segregation1 {
 

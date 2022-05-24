@@ -1,4 +1,4 @@
-package com.yarnon.principle.dependencdInversion.type;
+package com.yaron.principle.dependencdInversion.type;
 
 
 public class Type1 {
