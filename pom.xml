@@ -15,7 +15,7 @@
         <maven.compiler.target>1.11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <encoding>UTF-8</encoding>
-        <java.version>1.8</java.version>
+        <java.version>1.11</java.version>
         <springboot-mybatis.version>1.3.0</springboot-mybatis.version>
         <mysql.version>5.1.41</mysql.version>
         <swagger2.version>3.0.0</swagger2.version>
