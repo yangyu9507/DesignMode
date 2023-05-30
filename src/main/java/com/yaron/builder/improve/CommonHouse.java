@@ -6,19 +6,31 @@ package com.yaron.builder.improve;
  * @Version 1.0
  * @Description
  */
-public class CommonHouse extends HouseBuilder {
+public class CommonHouse implements HouseBuilder {
+
+    private House house;
+
+    public CommonHouse() {
+        this.house = initHouse();
+    }
+
     @Override
     public void buildBasic() {
-        System.out.println("普通房子打地基");
+        this.house.setBasic("普通房子打地基");
     }
 
     @Override
     public void buildWall() {
-        System.out.println("普通房子砌墙");
+        this.house.setWall("普通房子砌墙");
     }
 
     @Override
     public void roofed() {
-        System.out.println("普通房子封顶");
+        this.house.setRoofed("普通房子封顶");
+    }
+
+    @Override
+    public House getResult() {
+        return house;
     }
 }

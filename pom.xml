@@ -69,6 +69,11 @@
             <version>${fastjson.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
         <!--swagger2和swagger2-ui-->
         <dependency>
             <groupId>io.springfox</groupId>

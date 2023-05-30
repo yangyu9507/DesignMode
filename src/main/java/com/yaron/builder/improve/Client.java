@@ -9,17 +9,20 @@ package com.yaron.builder.improve;
 public class Client {
 
     public static void main(String[] args) {
-     HouseDirector houseDirector = new HouseDirector();
+     HouseDirector director = new HouseDirector();
 
-
+         // 普通房子
         CommonHouse commonHouse = new CommonHouse();
-         houseDirector.setHouseBuilder(commonHouse);
-        houseDirector.constructHouse();
+        director.setHouseBuilder(commonHouse);
+        director.constructHouse();
+        System.out.println(commonHouse.getResult());
 
+        // 高楼
         HighHouse highHouse = new HighHouse();
-        houseDirector.setHouseBuilder(highHouse);
+        director.setHouseBuilder(highHouse);
 
-        houseDirector.constructHouse();
+        director.constructHouse();
+        System.out.println(highHouse.getResult());
 
     }
 }

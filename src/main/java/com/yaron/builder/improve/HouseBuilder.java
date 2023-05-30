@@ -6,20 +6,19 @@ package com.yaron.builder.improve;
  * @Version 1.0
  * @Description 抽象的建造者
  */
-public abstract class HouseBuilder {
+public interface HouseBuilder {
 
-    protected House house = new House();
-
-    // 建造流程
-    public abstract void buildBasic();
-
-    public abstract void buildWall();
-
-    public abstract void roofed();
-
-    // 房子好后,返回
-    public House buildHouse() {
-        return house;
+    default House initHouse(){
+        return House.builder().build();
     }
+
+     void buildBasic();
+
+      void buildWall();
+
+     void roofed();
+
+     // 房子好后,返回
+     House getResult() ;
 
 }

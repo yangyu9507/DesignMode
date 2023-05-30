@@ -19,11 +19,13 @@ public class HouseDirector {
      *
      * @return
      */
-    public House constructHouse(){
+    public void constructHouse(){
+
         houseBuilder.buildBasic();
         houseBuilder.buildWall();
         houseBuilder.roofed();
-        return houseBuilder.buildHouse();
+
+
     }
 
 }
