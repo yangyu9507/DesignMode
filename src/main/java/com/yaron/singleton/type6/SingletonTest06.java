@@ -4,7 +4,7 @@ package com.yaron.singleton.type6;
  * @author 杨宇
  * @Date 2022-05-24
  * @Version 1.0
- * @Description 双重检查 Double-Check
+ * @Description 双重检查.txt Double-Check
  */
 public class SingletonTest06 {
 
@@ -27,7 +27,7 @@ class Singleton {
     }
 
     /**
-     * 双重检查
+     * 双重检查.txt
      *
      * @return
      */
