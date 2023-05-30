@@ -13,7 +13,7 @@ public class ClientTest {
     public static void main(String[] args) {
 
         String expStr = "a+b-c";
-        HashMap<String,Integer> var = new HashMap<>(){
+        HashMap<String,Integer> var = new HashMap<String,Integer>(){
             {
                 put("a",10);
                 put("b",20);
