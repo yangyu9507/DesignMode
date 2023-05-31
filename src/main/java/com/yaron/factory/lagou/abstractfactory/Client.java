@@ -1,9 +1,9 @@
-package com.yaron.factory.lagou.aaa;
+package com.yaron.factory.lagou.abstractfactory;
 
-import com.yaron.factory.lagou.aaa.factory.AbstractFactory;
-import com.yaron.factory.lagou.aaa.factory.impl.ChinaFactory;
-import com.yaron.factory.lagou.aaa.factory.impl.UsaFactory;
-import com.yaron.factory.lagou.aaa.jiaju.Chair;
+import com.yaron.factory.lagou.abstractfactory.factory.AbstractFactory;
+import com.yaron.factory.lagou.abstractfactory.factory.impl.ChinaFactory;
+import com.yaron.factory.lagou.abstractfactory.factory.impl.UsaFactory;
+import com.yaron.factory.lagou.abstractfactory.jiaju.Chair;
 
 public class Client {
 
