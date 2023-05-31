@@ -1,6 +1,6 @@
 package com.yaron.builder.lagou;
 
-public class ConcreteBuilder implements Builder{
+public class ConcreteBuilder implements Builder {
 
     private int partA;
 
@@ -26,6 +26,6 @@ public class ConcreteBuilder implements Builder{
 
     @Override
     public Product getResult() {
-    return Product.builder().partA(partA).partB(partB).partC(partC).build();
+        return Product.builder().partA(partA).partB(partB).partC(partC).build();
     }
 }

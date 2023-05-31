@@ -9,7 +9,7 @@ package com.yaron.builder.improve;
 public interface HouseBuilder {
 
     default House initHouse(){
-        return House.builder().build();
+        return new House();
     }
 
      void buildBasic();

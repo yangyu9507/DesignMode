@@ -8,7 +8,7 @@ package com.yaron.builder.improve;
  */
 public class CommonHouse implements HouseBuilder {
 
-    private House house;
+    private final House house;
 
     public CommonHouse() {
         this.house = initHouse();

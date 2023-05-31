@@ -1,16 +1,5 @@
 package com.yaron.builder.lagou;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
-
-@Data
-@Builder
-@ToString
-@NoArgsConstructor
-@AllArgsConstructor
 public class Product {
 
     private int partA;
@@ -18,4 +7,39 @@ public class Product {
     private String partB;
 
     private int partC;
+
+    public static Product builder(){
+        return new Product();
+    }
+
+    public int getPartA() {
+        return partA;
+    }
+
+    public Product partA(int partA) {
+        this.partA = partA;
+        return this;
+    }
+
+    public String getPartB() {
+        return partB;
+    }
+
+    public Product partB(String partB) {
+        this.partB = partB;
+        return this;
+    }
+
+    public int getPartC() {
+        return partC;
+    }
+
+    public Product partC(int partC) {
+        this.partC = partC;
+        return this;
+    }
+
+    public Product build(){
+        return this;
+    }
 }
