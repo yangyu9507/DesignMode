@@ -1,37 +1,39 @@
 package com.yaron.composite.impl;
 
+import com.google.common.collect.Lists;
 import com.yaron.composite.OrganizationComponent;
+import lombok.extern.slf4j.Slf4j;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author 杨宇
  * @Date 2022-05-25
  * @Version 1.0
- * @Description
+ * @Description 学院
  */
+@Slf4j
 public class College extends OrganizationComponent {
 
     /**
-     * 院系
+     * 专业列表
      */
-    List<OrganizationComponent> departments = new ArrayList<>();
-
+    List<OrganizationComponent> departments;
 
     public College(String name, String desc) {
         super(name, desc);
+        this.departments = Lists.newArrayList();
     }
 
     @Override
     protected void add(OrganizationComponent department) {
-        System.out.println("添加院系.........");
+        log.info("添加院系.........{}", department.getName());
         departments.add(department);
     }
 
     @Override
     protected void remove(OrganizationComponent department) {
-        System.out.println("移除院系.........");
+        log.info("移除院系.........{}", department.getName());
         departments.remove(department);
     }
 
@@ -47,7 +49,7 @@ public class College extends OrganizationComponent {
 
     @Override
     public void print() {
-        System.out.println("================== "+getName()+" ==========================");
+        log.info("================== "+getName()+" ==========================");
         departments.forEach(OrganizationComponent::print);
     }
 }
