@@ -11,12 +11,12 @@ import com.yaron.facade.equipment.*;
 public class HomeTheaterFacade {
 
     // 定义各个子系统对象
-    private Light light;
-    private Popcorn popcorn;
-    private Stereo stereo;
-    private Projector projector;
-    private Screen screen;
-    private DVDPlayer dvdPlayer;
+    private Light light;         // 灯光
+    private Popcorn popcorn;     // 爆米花机
+    private Stereo stereo;       // 立体声
+    private Projector projector; // 投影仪
+    private Screen screen;       // 屏幕
+    private DVDPlayer dvdPlayer; // DVD播放器
 
     public HomeTheaterFacade() {
         this.light = Light.getInstance();

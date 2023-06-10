@@ -8,13 +8,10 @@ package com.yaron.facade.equipment;
  */
 public class Projector {
 
-    private static Projector instance = new Projector();
-
-    private Projector() {
-    }
+    private Projector() {}
 
     public static Projector getInstance() {
-        return instance;
+        return new Projector();
     }
 
     public void on() {

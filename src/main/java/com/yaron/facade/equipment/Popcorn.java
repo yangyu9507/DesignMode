@@ -4,18 +4,14 @@ package com.yaron.facade.equipment;
  * @author 杨宇
  * @Date 2022-05-26
  * @Version 1.0
- * @Description
+ * @Description 爆米花机
  */
 public class Popcorn {
 
-    private static Popcorn instance = new Popcorn();
-
-    private Popcorn() {
-
-    }
+    private Popcorn() {}
 
     public static Popcorn getInstance() {
-        return instance;
+        return new Popcorn();
     }
 
     public void on() {
@@ -25,7 +21,6 @@ public class Popcorn {
     public void pop() {
         System.out.println("爆米花 pop");
     }
-
 
     public void off() {
         System.out.println("爆米花 off");

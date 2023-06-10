@@ -8,13 +8,10 @@ package com.yaron.facade.equipment;
  */
 public class Screen {
 
-    private static Screen instance = new Screen();
-    private Screen(){
-
-    }
+    private Screen(){}
 
     public static Screen getInstance() {
-        return instance;
+        return new Screen();
     }
 
     public void up(){

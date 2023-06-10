@@ -7,14 +7,11 @@ package com.yaron.facade.equipment;
  * @Description
  */
 public class DVDPlayer {
-    private static DVDPlayer instance = new DVDPlayer();
 
-    private DVDPlayer(){
-
-    }
+    private DVDPlayer(){}
 
     public static DVDPlayer getInstance() {
-        return instance;
+        return new DVDPlayer();
     }
 
     public void on(){

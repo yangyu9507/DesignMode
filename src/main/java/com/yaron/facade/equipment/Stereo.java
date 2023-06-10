@@ -8,26 +8,23 @@ package com.yaron.facade.equipment;
  */
 public class Stereo {
 
- private static Stereo instance = new Stereo();
- 
- private Stereo(){
-  
- }
+    private Stereo() {
+    }
 
- public static Stereo getInstance() {
-  return instance;
- }
+    public static Stereo getInstance() {
+        return new Stereo();
+    }
 
- public void on(){
-  System.out.println("立体声 on");
- }
+    public void on() {
+        System.out.println("立体声 on");
+    }
 
- public void up(){
-  System.out.println("立体声 up");
- }
+    public void up() {
+        System.out.println("立体声 up");
+    }
 
- public void off(){
-  System.out.println("立体声 off");
- }
- 
+    public void off() {
+        System.out.println("立体声 off");
+    }
+
 }
