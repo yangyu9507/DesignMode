@@ -8,11 +8,10 @@ import com.yaron.decorate.decorated.Coffee;
  * @Version 1.0
  * @Description
  */
-public class LongBlack extends Coffee {
+public class EspressoCoffee extends Coffee {
 
-    public LongBlack() {
-        setDesc("LongBlack");
-        setPrice(5.5f);
+    public EspressoCoffee() {
+        setDesc("意大利咖啡");
+        setPrice(6.6f);
     }
-
 }

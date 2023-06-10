@@ -9,12 +9,11 @@ import com.yaron.decorate.decorator.Decorator;
  * @Version 1.0
  * @Description
  */
-public class Milk extends Decorator {
+public class SoyDecorator extends Decorator {
 
-    public Milk(Drink obj) {
-
+    public SoyDecorator(Drink obj) {
         super(obj);
-        setDesc("牛奶");
-        setPrice(2.0f);
+        setDesc("豆浆");
+        setPrice(1.5f);
     }
 }

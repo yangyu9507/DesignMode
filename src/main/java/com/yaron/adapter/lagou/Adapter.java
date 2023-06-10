@@ -6,13 +6,13 @@ package com.yaron.adapter.lagou;
  * @date 2023-06-03
  * @description 适配器类
  */
-public class Adapter extends TargetAbstraction{
+public class Adapter implements Service {
 
     private OtherClass otherClass;
 
-    private TargetAbstractionImpl impl;
+    private ServiceImpl impl;
 
-    public Adapter(OtherClass otherClass, TargetAbstractionImpl impl){
+    public Adapter(OtherClass otherClass, ServiceImpl impl){
         this.otherClass = otherClass;
         this.impl = impl;
     }

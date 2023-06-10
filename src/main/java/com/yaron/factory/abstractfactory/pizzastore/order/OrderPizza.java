@@ -44,4 +44,9 @@ public class OrderPizza {
         }
     }
 
+    public static void main(String[] args) {
+//        new OrderPizza(new BJFactory());
+        new OrderPizza(new LDFactory());
+    }
+
 }

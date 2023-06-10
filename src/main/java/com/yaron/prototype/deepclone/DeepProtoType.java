@@ -1,6 +1,13 @@
 package com.yaron.prototype.deepclone;
 
-import java.io.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+import java.io.ByteArrayOutputStream;
+import java.io.ByteArrayInputStream;
+import java.io.ObjectOutputStream;
+import java.io.ObjectInputStream;
 
 /**
  * @author 杨宇
@@ -8,16 +15,14 @@ import java.io.*;
  * @Version 1.0
  * @Description
  */
+@Data
+@NoArgsConstructor
 public class DeepProtoType implements Serializable,Cloneable {
 
     private static final long serialVersionUID = 7049613497521134388L;
 
     private String name;
     private DeepCloneableTarget deepCloneableTarget;
-
-
-    public DeepProtoType() {
-    }
 
     /**
      * 深拷贝1 使用clone方法
@@ -79,20 +84,4 @@ public class DeepProtoType implements Serializable,Cloneable {
         return copyObj;
     }
 
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public DeepCloneableTarget getDeepCloneableTarget() {
-        return deepCloneableTarget;
-    }
-
-    public void setDeepCloneableTarget(DeepCloneableTarget deepCloneableTarget) {
-        this.deepCloneableTarget = deepCloneableTarget;
-    }
 }

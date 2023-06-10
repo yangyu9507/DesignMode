@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
  * @description 适配器类
  */
 @NoArgsConstructor
-public class TargetAbstractionImpl extends TargetAbstraction {
+public class ServiceImpl implements Service {
 
     @Override
     public String filter(String str) {

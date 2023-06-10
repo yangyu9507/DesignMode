@@ -6,8 +6,8 @@ package com.yaron.adapter.lagou;
  * @date 2023-06-03
  * @description 目标类
  */
-public abstract class TargetAbstraction {
+public interface Service {
 
-    protected abstract String filter(String str);
+   String filter(String str);
 
 }

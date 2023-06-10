@@ -3,7 +3,12 @@ package com.yaron.decorate.lagou.example2.impl;
 import com.yaron.decorate.lagou.example2.DataLoaderService;
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.FileOutputStream;
+
 import java.nio.charset.StandardCharsets;
 
 /**

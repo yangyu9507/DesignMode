@@ -1,8 +1,8 @@
 package com.yaron.decorate;
 
-import com.yaron.decorate.decorated.impl.LongBlack;
-import com.yaron.decorate.decorator.impl.Milk;
-import com.yaron.decorate.decorator.impl.Soy;
+import com.yaron.decorate.decorated.impl.AmericanoCoffee;
+import com.yaron.decorate.decorator.impl.MilkDecorator;
+import com.yaron.decorate.decorator.impl.SoyDecorator;
 
 /**
  * @author 杨宇
@@ -13,18 +13,18 @@ import com.yaron.decorate.decorator.impl.Soy;
 public class CoffeeClient {
 
     public static void main(String[] args) {
-        Drink drinkOrder = new LongBlack();
+        Drink drinkOrder = new AmericanoCoffee();
 
 
         System.out.println("描述: " + drinkOrder.getDesc());
         System.out.println("价格: " + drinkOrder.cost());
 
-        drinkOrder = new Milk(drinkOrder);
+        drinkOrder = new MilkDecorator(drinkOrder);
 
         System.out.println("描述: " + drinkOrder.getDesc());
         System.out.println("价格: " + drinkOrder.cost());
 
-        drinkOrder = new Soy(drinkOrder);
+        drinkOrder = new SoyDecorator(drinkOrder);
 
         System.out.println("描述: " + drinkOrder.getDesc());
         System.out.println("价格: " + drinkOrder.cost());

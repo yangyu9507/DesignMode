@@ -1,11 +1,14 @@
 package com.yaron.decorate;
 
+import lombok.Data;
+
 /**
  * @author 杨宇
  * @Date 2022-05-25
  * @Version 1.0
  * @Description
  */
+@Data
 public abstract class Drink {
 
     private String desc;
@@ -18,19 +21,4 @@ public abstract class Drink {
      */
     public abstract float cost();
 
-    public String getDesc() {
-        return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
 }

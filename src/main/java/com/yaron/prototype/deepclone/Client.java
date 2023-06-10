@@ -14,8 +14,8 @@ public class Client {
         protoType.setName("宋江");
         protoType.setDeepCloneableTarget(new DeepCloneableTarget("大牛", "大年类"));
 
-//        DeepProtoType clone = (DeepProtoType) protoType.clone();
-        DeepProtoType clone = (DeepProtoType) protoType.deepClone();
+        DeepProtoType clone = (DeepProtoType) protoType.clone();
+//        DeepProtoType clone = (DeepProtoType) protoType.deepClone();
 
         System.out.println(protoType.getDeepCloneableTarget().hashCode());
         System.out.println(clone.getDeepCloneableTarget().hashCode());
