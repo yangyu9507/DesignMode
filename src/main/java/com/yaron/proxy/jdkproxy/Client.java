@@ -13,7 +13,7 @@ public class Client {
         ITeacherDao dao = new TeacherDao();
 
         // 给目标对象 创建代理对象  可以转成ITeacherDao
-        ProxyFactory factory = new ProxyFactory(dao);
+        ProxyFactory<ITeacherDao> factory = new ProxyFactory<>(dao);
         Object proxyInstance = factory.getProxyInstance();
         // com.yaron.proxy.jdkproxy.TeacherDao@4566e5bd
 //        System.out.println(proxyInstance);

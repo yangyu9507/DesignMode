@@ -10,11 +10,11 @@ import java.lang.reflect.Proxy;
  * @Version 1.0
  * @Description
  */
-public class ProxyFactory {
+public class ProxyFactory<T> {
 
-    private Object target;
+    private final T target;
 
-    public ProxyFactory(Object target) {
+    public ProxyFactory(T target) {
         this.target = target;
     }
 
